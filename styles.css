@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "Gotham Black"; /* Name the font */
+  src: url('assets/fonts/Gotham-Black.otf') format('opentype'); /* Specify the path to your font file */
+  font-weight: 500;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1EBDC1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+button.btn {
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  border: 1px solid #1ECAD3;
+  background: rgba(255, 255, 255, 0.25);
+  background-blend-mode: overlay;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #1ECAD3;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  color: #333;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  gap: 66px;
+  height: 80px;
+  background: linear-gradient(180deg, #000000 -76.79%, rgba(0, 0, 0, 0) 100%);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+ul.menu {
+  display: flex;
+  gap: 66px;
+}
+
+.logo a,
+ul.menu li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+
+section.hero {
+  margin-top: -80px;
+  position: relative;
+  background: linear-gradient(89.94deg, rgba(0, 0, 0, 0.77) 37.62%, rgba(0, 0, 0, 0) 105.28%);
+}
+
+section.hero .content {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  margin-top: 220px;
+  margin-left: 100px;
+}
+
+section.hero .intro {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+section.hero .intro .logo {
+  width: 65px;
+  height: 33px;
+  margin: 0 .75rem;
+}
+
+section.hero .content .new-logo {
+  margin: 29px 0;
+}
+
+section.hero .content p {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #fff;
+  line-height: 150%;
+}
+
+.btn.cta {
+  margin-top: 24px;
+}
+
+section.marketing {
+  background: #CAD8D9;
+  text-align: center;
+  padding: 70px 0 40px;
+  position: relative;
+}
+
+section.marketing h3,
+section.marketing h4 {
+  font-family: 'Gotham Black', sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: -15px 8px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+  line-height: 134.5%;
+  position: relative;
+  z-index: 300;
+}
+
+section.marketing h4 {
+  text-shadow: -15px 8px 10px rgba(0, 0, 0, 0.05);
+  letter-spacing: 10px;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  margin-top: -1rem;
+}
+
+section.marketing .card-img {
+  margin-bottom: -10rem;
+  z-index: 200;
+  position: relative;
+}
+
+section.marketing .bg-lines {
+  position: absolute;
+  left: 0;
+  top: -100px;
+  right: 0;
+  z-index: 100;
+}
+
+.benefits.row {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 307px 285px;
+  justify-content: center;
+  gap: 224px;
+}
+
+.benefit {
+  text-align: left;
+  color: #4A4A4A;
+  z-index: 300;
+}
+
+.benefit .obs {
+  margin: .5rem 0 1rem;
+  font-weight: 400;
+}
+
+.benefit .note {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+section.request {
+  background: #CAD8D9;
+  padding: 110px 0 64px;
+}
+
+section.request .title {
+  width: 686px;
+  display: flex;
+  flex-direction: column;
+}
+
+section.request .title-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+section.request .decorator {
+  position: absolute;
+  left: 0;
+  top: -15px;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  margin-left: -36px;
+  margin-right: -64px;
+}
+
+section.request h3.title {
+  font-weight: 500;
+  font-family: "Gotham Black", sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  letter-spacing: 1px;
+  line-height: 134.5%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 200;
+}
+
+section.request h3.title span:last-child,
+section.request .decorator span:last-child {
+  margin-left: auto;
+}
+
+section.request .decorator span {
+  font-weight: 500;
+  font-family: "Gotham Black", sans-serif;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  letter-spacing: 10px;
+  line-height: 120%;
+  color: #fff;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+
+section.request .request-options.row {
+  display: grid;
+  grid-template-columns: 391px 391px;
+  gap: 245px;
+  margin-top: 106px;
+  justify-content: center;
+}
+
+.request-options .card {
+  border-radius: 10px;
+}
