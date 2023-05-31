@@ -22,12 +22,12 @@
         </a>
       </h1>
       <ul class="menu">
-        <li><a href="#">COMO SOLICITAR O TOP</a></li>
-        <li><a href="#">AJUDA</a></li>
-        <li><a href="#">CONTATO</a></li>
+        <li><a href="#request">COMO SOLICITAR O TOP</a></li>
+        <li><a href="#help">AJUDA</a></li>
+        <li><a href="#contact">CONTATO</a></li>
       </ul>
       <button class="btn unstyled menu">
-        <img src="assets/icons/menu.svg">
+        <img src="assets/icons/menu.svg" />
       </button>
     </header>
     <main>
@@ -40,19 +40,17 @@
           <img class="new-logo" src="assets/logos/top.svg" />
           <p>
             Em abril de 2023 as operações do
-            <b
-              >Cartão
-              BOM foram descontinuadas.</b
-            >
+            <b>Cartão BOM foram descontinuadas.</b>
           </p>
           <p>
-            Mas não precisa se preocupar!
-            Você pode continuar embarcando com o <b>Cartão TOP.</b>
+            Mas não precisa se preocupar! Você pode continuar embarcando com o
+            <b>Cartão TOP.</b>
           </p>
           <button class="btn cta">Pedir meu Cartão TOP</button>
         </div>
+        <img class="scroll" src="assets/scroll.svg" />
       </section>
-      <!-- <section class="marketing">
+      <section class="marketing">
         <img class="bg-lines" src="assets/linhas-bg.svg" />
         <img class="card-img" src="assets/card.png" />
         <h3>O TOP é BEM mais que um</h3>
@@ -61,13 +59,12 @@
           <div class="benefit">
             <p>
               Além de usá-lo no <b>transporte público</b> você também pode fazer
-              <b
-                >compras em qualquer loja física ou online nas funções Débito e
+              <b>compras em qualquer loja física ou online nas funções Débito e
                 Crédito*.
               </b>
             </p>
             <p class="obs">Tudo isso em um só Cartão!</p>
-            <p class="note">*Produto sujeito à aprovação.</p>
+            <p class="note">* Produto sujeito à análise de crédito.</p>
           </div>
           <div class="benefit">
             <p>
@@ -78,7 +75,7 @@
           </div>
         </div>
       </section>
-      <section class="request">
+      <section class="request" id="request">
         <div class="title-wrapper">
           <div class="decorator">
             <span>quero meu cartão top</span>
@@ -91,6 +88,14 @@
         </div>
         <div class="request-options row">
           <div class="card">
+            <div class="hover">
+              <p>
+                Após realizar o seu cadastro no App e solicitar o Cartão, você
+                poderá escolher entre <b>recebê-lo em casa</b> ou <b>retirá-lo em uma das
+                Lojas Pernambucanas</b> elegíveis.
+              </p>
+              <a href="#" class="btn card-cta">Baixar App Top</a>
+            </div>
             <img src="assets/card-request-app.png" />
             <span class="info">Pelo App <br />do Top</span>
             <button class="cta">
@@ -109,6 +114,17 @@
             </button>
           </div>
           <div class="card">
+            <div class="hover">
+              <p>
+                Acesse o <a href="#"><b>link de agendamento</b></a> e agende sua ida à Loja
+                Pernambucanas mais próxima.
+              </p>
+              <p>
+                Depois basta <b>ir à Loja no dia e horário escolhidos</b>, com um
+                documento com foto.
+              </p>
+              <a href="#" class="btn card-cta">Agendar Horário</a>
+            </div>
             <img src="assets/card-request-store.png" />
             <span class="info">Nas lojas <br />CREDENCIADAS</span>
             <button class="cta">
@@ -131,7 +147,7 @@
           <img src="assets/scroll.svg" />
         </div>
       </section>
-      <section class="questions">
+      <section class="questions" id="help">
         <img class="bg" src="assets/grafismo.svg" />
         <div class="hero row">
           <img class="topinho" src="assets/topinho.svg" />
@@ -150,21 +166,35 @@
         <div class="top-questions">
           <div class="title">ASSUNTOS MAIS BUSCADOS:</div>
           <div class="chips">
-            <button class="btn secondary">Migrar para o Cartão TOP</button>
-            <button class="btn secondary">Saldo que sobrou</button>
-            <button class="btn secondary">
-              Solicitar 2ª via do Cartão BOM
-            </button>
-            <button class="btn secondary">
-              Transferir meu saldo para o TOP
-            </button>
-            <button class="btn secondary">
-              Ver a validade do meu Saldo no BOM
-            </button>
+            <a
+              href="https://ajuda.boradetop.com.br/hc/pt-br/articles/14990298913691-Tenho-um-Cart%C3%A3o-BOM-e-desejo-trocar-para-um-TOP-como-fa%C3%A7o-"
+              class="btn secondary"
+              >Migrar para o Cartão TOP</a
+            >
+            <a
+              href="https://ajuda.boradetop.com.br/hc/pt-br/articles/14991246258715-Ainda-tenho-saldo-no-meu-Cart%C3%A3o-BOM-E-agora-"
+              class="btn secondary"
+              >Saldo que sobrou</a
+            >
+            <a
+              href="https://ajuda.boradetop.com.br/hc/pt-br/articles/15084137287067-Perdi-o-meu-Cart%C3%A3o-BOM-que-ainda-tinha-saldo-E-agora-"
+              class="btn secondary"
+              >Solicitar 2ª via do Cartão BOM</a
+            >
+            <a
+              href="https://ajuda.boradetop.com.br/hc/pt-br/articles/15106818599579-Posso-transferir-o-meu-saldo-do-Cart%C3%A3o-BOM-para-o-TOP-"
+              class="btn secondary"
+              >Transferir meu saldo para o TOP</a
+            >
+            <a
+              href="https://ajuda.boradetop.com.br/hc/pt-br/articles/15106721889563-Posso-utilizar-o-saldo-do-meu-Cart%C3%A3o-BOM-at%C3%A9-quando-"
+              class="btn secondary"
+              >Ver a validade do meu Saldo no BOM</a
+            >
           </div>
         </div>
-      </section> -->
-      <footer>
+      </section>
+      <footer id="contact">
         <div class="hero">
           O
           <div class="logo-wrapper">
@@ -177,19 +207,16 @@
         <img class="logo" src="assets/logos/autopass.svg" alt="Autopass Logo" />
         <ul class="company-information">
           <li>
-            07.140.538/0001-40 | Av. Presidente Juscelino <br />Kubitschek,
-            1327, 10º Andar, Itaim Bibi - Internacional <br />Plaza II | São
-            Paulo, SP
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              07.140.538/0001-40<br/>
+              <span itemprop="streetAddress">Av. Presidente Juscelino Kubitschek, <br/>1327, 10º Andar, Itaim Bibi - <br/>Internacional Plaza II</span> |
+              <span itemprop="addressLocality">São Paulo</span>,
+              <span itemprop="addressRegion">SP</span>
+            </span>
           </li>
           <li>
             <span class="label">Central de Ajuda:</span>
-            <a
-              href="http://ajuda.boradetop.com.br"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="value"
-              >ajuda.boradetop.com.br</a
-            >
+            <a href="http://ajuda.boradetop.com.br" target="_blank" rel="noopener noreferrer" class="value">ajuda.boradetop.com.br</a>
           </li>
           <li>
             <span class="label">Central de Relacionamento:</span>
@@ -201,13 +228,104 @@
           </li>
           <li>
             <span class="label">Ouvidoria (serviços financeiros):</span>
-            <a href="tel:08007029248" class="value">0800 70 29 248</a><br />
-            <a href="mailto:ouvidoria@pefisa.com.br" class="value"
-              >ouvidoria@pefisa.com.br</a
-            >
+            <a href="tel:08007029248" class="value">0800 70 29 248</a>
+            <a href="mailto:ouvidoria@pefisa.com.br" class="value">ouvidoria@pefisa.com.br</a>
+          </li>
+        </ul>
+        <ul class="social links">
+          <li>
+            <a href="https://www.youtube.com/channel/UCEaMmz6Wo_VSOkPhJ8Bkpgw" aria-label="LinkedIn">
+              <img src="assets/social/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/boradetop/" aria-label="Instagram">
+              <img src="assets/social/instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/boradetop" aria-label="Twitter">
+              <img src="assets/social/twitter.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/boradetop" aria-label="Facebook">
+              <img src="assets/social/facebook.svg" alt="Facebook" />
+            </a>
           </li>
         </ul>
       </footer>
     </main>
+    <div class="mobile-menu">
+      <div class="header">
+        <img class="logo" src="assets/logos/bom.svg" alt="Logo Bom" />
+        <button class="btn unstyled close">
+          <img src="assets/icons/close.svg" alt="Botão Fechar" />
+        </button>
+      </div>
+      <div class="art"></div>
+      <nav class="links">
+        <ul>
+          <li><a href="#request">COMO SOLICITAR O TOP <img src="assets/icons/caret-right.svg" /></a></li>
+          <li><a href="#help">AJUDA <img src="assets/icons/caret-right.svg" /></a></li>
+          <li><a href="#contact">CONTATO <img src="assets/icons/caret-right.svg" /></a></li>
+        </ul>
+      </nav>
+      <div class="footer">
+        <img src="assets/logos/top.svg" class="logo top" width="58" height="22" />
+        <ul class="social-links">
+          <li>
+            <a href="https://www.youtube.com/channel/UCEaMmz6Wo_VSOkPhJ8Bkpgw" aria-label="LinkedIn">
+              <img src="assets/social/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/boradetop/" aria-label="Instagram">
+              <img src="assets/social/instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/boradetop" aria-label="Twitter">
+              <img src="assets/social/twitter.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/boradetop" aria-label="Facebook">
+              <img src="assets/social/facebook.svg" alt="Facebook" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <img src="assets/art/mobile-menu.svg" class="lines-art" />
+    </div>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const mobileMenuButton = document.querySelector(".btn.menu");
+        const mobileMenuCloseButton = document.querySelector(".mobile-menu .close");
+        const mobileMenuArt = document.querySelector(".mobile-menu .art");
+        const mobileMenuLinks = document.querySelector(".mobile-menu .links");
+        const mobileMenuLinksList = document.querySelectorAll(".mobile-menu .links li");
+        const mobileMenuLinksListArray = Array.from(mobileMenuLinksList);
+
+        mobileMenuButton.addEventListener("click", function () {
+          mobileMenu.classList.add("open");
+        });
+
+        mobileMenuCloseButton.addEventListener("click", function () {
+          mobileMenu.classList.remove("open");
+        });
+
+        mobileMenuArt.addEventListener("click", function () {
+          mobileMenu.classList.remove("open");
+        });
+
+        mobileMenuLinksListArray.forEach(function (item) {
+          item.addEventListener("click", function () {
+            mobileMenu.classList.remove("open");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
