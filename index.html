@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Obtenha todas as informações sobre como solicitar e utilizar o novo Cartão TOP. Acesse a Central de Ajuda e entre em contato conosco para obter suporte."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,54 +21,88 @@
   <body>
     <header>
       <h1 class="logo">
-        <a href="#">
-          <img src="assets/logos/bom.svg" />
+        <a href="#" aria-label="Homepage">
+          <img width="75" height="32" src="assets/logos/bom.svg" alt="Logo" />
         </a>
       </h1>
-      <ul class="menu">
-        <li><a href="#request">COMO SOLICITAR O TOP</a></li>
-        <li><a href="#help">AJUDA</a></li>
-        <li><a href="#contact">CONTATO</a></li>
-      </ul>
-      <button class="btn unstyled menu">
-        <img src="assets/icons/menu.svg" />
+      <nav>
+        <ul class="menu" role="menu">
+          <li role="menuitem"><a href="#request">COMO SOLICITAR O TOP</a></li>
+          <li role="menuitem"><a href="#help">AJUDA</a></li>
+          <li role="menuitem"><a href="#contact">CONTATO</a></li>
+        </ul>
+      </nav>
+      <button class="btn unstyled menu" aria-label="Menu">
+        <img width="20" height="14" src="assets/icons/menu.svg" alt="Menu" />
       </button>
     </header>
     <main>
       <section class="hero">
-        <img class="back-image" src="assets/hero-desktop.png" />
+        <img
+          width="1514"
+          height="873"
+          class="back-image"
+          src="assets/hero-desktop.png"
+          alt="Hero Background Image"
+        />
         <div class="content">
           <h2 class="intro">
-            O Cartão <img class="logo" src="assets/logos/bom.svg" /> agora é
+            O Cartão
+            <img
+              width="65"
+              height="33"
+              class="logo"
+              src="assets/logos/bom.svg"
+              alt="Logo BOM"
+            />
+            agora é
           </h2>
-          <img class="new-logo" src="assets/logos/top.svg" />
+          <img
+            width="402"
+            height="156"
+            class="new-logo"
+            src="assets/logos/top.svg"
+            alt="Logo TOP"
+          />
           <p>
             Em abril de 2023 as operações do
-            <b>Cartão BOM foram descontinuadas.</b>
+            <strong>Cartão BOM foram descontinuadas.</strong>
           </p>
           <p>
             Mas não precisa se preocupar! Você pode continuar embarcando com o
-            <b>Cartão TOP.</b>
+            <strong>Cartão TOP.</strong>
           </p>
           <a href="#request" class="btn cta">Pedir meu Cartão TOP</a>
         </div>
-        <img class="scroll" src="assets/scroll.svg" />
+        <img width="32" height="64" class="scroll" src="assets/scroll.svg" alt="Scroll Icon" />
       </section>
       <section class="marketing">
-        <img class="bg-lines" src="assets/linhas-bg.svg" />
-        <img class="card-img" src="assets/card.png" />
+        <img
+          width="1514"
+          height="1846"
+          class="bg-lines"
+          src="assets/linhas-bg.svg"
+          alt="Linhas Background"
+        />
+        <img
+          width="463"
+          height="562"
+          class="card-img"
+          src="assets/card.png"
+          alt="Imagem do card"
+        />
         <h3>O TOP é BEM mais que um</h3>
         <h4><span>Cartão de</span> <span>embarque</span></h4>
         <div class="benefits row">
           <div class="benefit">
             <p>
               Além de usá-lo no <b>transporte público</b> você também pode fazer
-              <b>compras em qualquer loja física ou online nas funções Débito e
+              <b
+                >compras em qualquer loja física ou online nas funções Débito e
                 Crédito*.
               </b>
             </p>
             <p class="obs">Tudo isso em um só Cartão!</p>
-            <p class="note">* Produto sujeito à análise de crédito.</p>
           </div>
           <div class="benefit">
             <p>
@@ -74,6 +112,7 @@
             </p>
           </div>
         </div>
+        <p class="note">* Produto sujeito à análise de crédito.</p>
       </section>
       <section class="request" id="request">
         <div class="title-wrapper">
@@ -91,12 +130,13 @@
             <div class="hover">
               <p>
                 Após realizar o seu cadastro no App e solicitar o Cartão, você
-                poderá escolher entre <b>recebê-lo em casa</b> ou <b>retirá-lo em uma das
-                Lojas Pernambucanas</b> elegíveis.
+                poderá escolher entre <strong>recebê-lo em casa</strong> ou
+                <strong>retirá-lo em uma das Lojas Pernambucanas</strong>
+                elegíveis.
               </p>
               <a href="#" class="btn card-cta">Baixar App Top</a>
             </div>
-            <img src="assets/card-request-app.png" />
+            <img width="393" height="258" src="assets/card-request-app.png" alt="Request Card via App" />
             <span class="info">Pelo App <br />do Top</span>
             <button class="cta">
               <svg
@@ -116,16 +156,27 @@
           <div class="card">
             <div class="hover">
               <p>
-                Acesse o <a href="https://vico158.gendo.app/v2/#/"><b>link de agendamento</b></a> e agende sua ida à Loja
-                Pernambucanas mais próxima.
+                Acesse o
+                <a href="https://vico158.gendo.app/v2/#/"
+                  ><strong>link de agendamento</strong></a
+                >
+                e agende sua ida à Loja Pernambucanas mais próxima.
               </p>
               <p>
-                Depois basta <b>ir à Loja no dia e horário escolhidos</b>, com um
+                Depois basta
+                <strong>ir à Loja no dia e horário escolhidos</strong>, com um
                 documento com foto.
               </p>
-              <a href="https://vico158.gendo.app/v2/#/" class="btn card-cta">Agendar Horário</a>
+              <a href="https://vico158.gendo.app/v2/#/" class="btn card-cta"
+                >Agendar Horário</a
+              >
             </div>
-            <img src="assets/card-request-store.png" />
+            <img
+              width="393"
+              height="258"
+              src="assets/card-request-store.png"
+              alt="Request Card at Store"
+            />
             <span class="info">Nas lojas <br />CREDENCIADAS</span>
             <button class="cta">
               <svg
@@ -144,13 +195,25 @@
           </div>
         </div>
         <div class="scroll indicator">
-          <img src="assets/scroll.svg" />
+          <img width="32" height="64" src="assets/scroll.svg" alt="Scroll Icon" />
         </div>
       </section>
       <section class="questions" id="help">
-        <img class="bg" src="assets/grafismo.svg" />
+        <img
+          width="1440"
+          height="632"
+          class="bg"
+          src="assets/grafismo.svg"
+          alt="Background Graphic"
+        />
         <div class="hero row">
-          <img class="topinho" src="assets/topinho.svg" />
+          <img
+            width="571"
+            height="571"
+            class="topinho"
+            src="assets/topinho.svg"
+            alt="Topinho Graphic"
+          />
           <div class="info">
             <h4 class="title">
               AINDA TEM <span class="lead">DÚVIDAS</span><br />
@@ -158,9 +221,14 @@
             </h4>
             <p class="text">
               Seja sobre assuntos relacionados ao BOM ou ao TOP, a nossa
-              <b>CENTRAL DE AJUDA</b> te auxilia com apenas alguns cliques.
+              <strong>CENTRAL DE AJUDA</strong> te auxilia com apenas alguns
+              cliques.
             </p>
-            <a href="https://ajuda.boradetop.com.br/hc/pt-br/sections/12188615159451-Cart%C3%A3o-BOM" class="btn">IR PARA central de ajuda</a>
+            <a
+              href="https://ajuda.boradetop.com.br/hc/pt-br/sections/12188615159451-Cart%C3%A3o-BOM"
+              class="btn"
+              >IR PARA central de ajuda</a
+            >
           </div>
         </div>
         <div class="top-questions">
@@ -194,118 +262,293 @@
           </div>
         </div>
       </section>
-      <footer id="contact">
+      <footer id="contact" itemscope itemtype="http://schema.org/Organization">
         <div class="hero">
           O
           <div class="logo-wrapper">
-            BOM<img class="logo" src="assets/logos/mini-bom.png" />
+            BOM<img
+              width=""
+              height=""
+              class="logo"
+              src="assets/logos/mini-bom.png"
+              alt="BOM Logo"
+            />
           </div>
           <br />
           AGORA É <span class="lead">TOP!</span>
         </div>
-        <img class="bg" src="assets/grafismo-footer.svg" />
-        <img class="logo" src="assets/logos/autopass.svg" alt="Autopass Logo" />
+        <img
+          width="736"
+          height="683"
+          class="bg"
+          src="assets/grafismo-footer.svg"
+          alt="Footer Background Graphic"
+        />
+        <img
+          width="137"
+          height="24"
+          class="logo"
+          src="assets/logos/autopass.svg"
+          alt="Autopass Logo"
+          itemprop="logo"
+        />
         <ul class="company-information">
           <li>
-            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-              07.140.538/0001-40<br/>
-              <span itemprop="streetAddress">Av. Presidente Juscelino Kubitschek, <br/>1327, 10º Andar, Itaim Bibi - <br/>Internacional Plaza II</span> |
-              <span itemprop="addressLocality">São Paulo</span>,
+            <span
+              itemprop="address"
+              itemscope
+              itemtype="http://schema.org/PostalAddress"
+            >
+              07.140.538/0001-40<br />
+              <span itemprop="streetAddress"
+                >Av. Presidente Juscelino Kubitschek, <br />1327, 10º Andar,
+                Itaim Bibi - <br />Internacional Plaza II</span
+              >
+              | <span itemprop="addressLocality">São Paulo</span>,
               <span itemprop="addressRegion">SP</span>
             </span>
           </li>
           <li>
             <span class="label">Central de Ajuda:</span>
-            <a href="http://ajuda.boradetop.com.br" target="_blank" rel="noopener noreferrer" class="value">ajuda.boradetop.com.br</a>
+            <a
+              href="http://ajuda.boradetop.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="value"
+              itemprop="url"
+              >ajuda.boradetop.com.br</a
+            >
           </li>
           <li>
             <span class="label">Central de Relacionamento:</span>
-            <a href="tel:+551138882200" class="value">(11) 3888-2200</a>
+            <a href="tel:+551138882200" class="value" itemprop="telephone"
+              >(11) 3888-2200</a
+            >
           </li>
           <li>
             <span class="label">SAC:</span>
-            <a href="tel:08007711800" class="value">0800 77 11 800</a>
+            <a href="tel:08007711800" class="value" itemprop="telephone"
+              >0800 77 11 800</a
+            >
           </li>
           <li>
             <span class="label">Ouvidoria (serviços financeiros):</span>
-            <a href="tel:08007029248" class="value">0800 70 29 248</a>
-            <a href="mailto:ouvidoria@pefisa.com.br" class="value">ouvidoria@pefisa.com.br</a>
+            <a href="tel:08007029248" class="value" itemprop="telephone"
+              >0800 70 29 248</a
+            >
+            <a
+              href="mailto:ouvidoria@pefisa.com.br"
+              class="value"
+              itemprop="email"
+              >ouvidoria@pefisa.com.br</a
+            >
           </li>
         </ul>
         <ul class="social links">
           <li>
-            <a href="https://www.youtube.com/channel/UCEaMmz6Wo_VSOkPhJ8Bkpgw" aria-label="LinkedIn">
-              <img src="assets/social/linkedin.svg" alt="LinkedIn" />
+            <a
+              href="https://www.linkedin.com/company/autopass/"
+              aria-label="LinkedIn"
+              itemprop="sameAs"
+            >
+              <img
+                width="32"
+                height="32"
+                src="assets/social/linkedin.svg"
+                alt="LinkedIn"
+              />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/boradetop/" aria-label="Instagram">
-              <img src="assets/social/instagram.svg" alt="Instagram" />
+            <a
+              href="https://www.instagram.com/boradetop/"
+              aria-label="Instagram"
+              itemprop="sameAs"
+            >
+              <img
+                width="32"
+                height="32"
+                src="assets/social/instagram.svg"
+                alt="Instagram"
+              />
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/boradetop" aria-label="Twitter">
-              <img src="assets/social/twitter.svg" alt="Twitter" />
+            <a
+              href="https://twitter.com/boradetop"
+              aria-label="Twitter"
+              itemprop="sameAs"
+            >
+              <img
+                width="32"
+                height="32"
+                src="assets/social/twitter.svg"
+                alt="Twitter"
+              />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/boradetop" aria-label="Facebook">
-              <img src="assets/social/facebook.svg" alt="Facebook" />
+            <a
+              href="https://www.facebook.com/boradetop"
+              aria-label="Facebook"
+              itemprop="sameAs"
+            >
+              <img
+                width="32"
+                height="32"
+                src="assets/social/facebook.svg"
+                alt="Facebook"
+              />
             </a>
           </li>
         </ul>
       </footer>
     </main>
-    <div class="mobile-menu">
+    <div
+      class="mobile-menu"
+      itemscope
+      itemtype="http://schema.org/Organization"
+    >
       <div class="header">
-        <img class="logo" src="assets/logos/bom.svg" alt="Logo Bom" />
+        <img
+          width="74"
+          height="33"
+          class="logo"
+          src="assets/logos/bom.svg"
+          alt="Logo BOM"
+          itemprop="logo"
+        />
         <button class="btn unstyled close">
-          <img src="assets/icons/close.svg" alt="Botão Fechar" />
+          <img
+            width="24"
+            height="24"
+            src="assets/icons/close.svg"
+            alt="Botão Fechar"
+          />
         </button>
       </div>
       <div class="art"></div>
       <nav class="links">
         <ul>
-          <li><a href="#request">COMO SOLICITAR O TOP <img src="assets/icons/caret-right.svg" /></a></li>
-          <li><a href="#help">AJUDA <img src="assets/icons/caret-right.svg" /></a></li>
-          <li><a href="#contact">CONTATO <img src="assets/icons/caret-right.svg" /></a></li>
+          <li>
+            <a href="#request" itemprop="url"
+              >COMO SOLICITAR O TOP
+              <img
+                width="24"
+                height="24"
+                src="assets/icons/caret-right.svg"
+                alt="Ícone seta para direita"
+            /></a>
+          </li>
+          <li>
+            <a href="#help" itemprop="url"
+              >AJUDA
+              <img
+                width="24"
+                height="24"
+                src="assets/icons/caret-right.svg"
+                alt="Ícone seta para direita"
+            /></a>
+          </li>
+          <li>
+            <a href="#contact" itemprop="url"
+              >CONTATO
+              <img
+                width="24"
+                height="24"
+                src="assets/icons/caret-right.svg"
+                alt="Ícone seta para direita"
+            /></a>
+          </li>
         </ul>
       </nav>
       <div class="footer">
-        <img src="assets/logos/top.svg" class="logo top" width="58" height="22" />
+        <img
+          src="assets/logos/top.svg"
+          class="logo top"
+          width="58"
+          height="22"
+          alt="Logo TOP"
+        />
         <ul class="social-links">
           <li>
-            <a href="https://www.youtube.com/channel/UCEaMmz6Wo_VSOkPhJ8Bkpgw" aria-label="LinkedIn">
-              <img src="assets/social/linkedin.svg" alt="LinkedIn" />
+            <a
+              href="https://www.linkedin.com/company/autopass/"
+              aria-label="LinkedIn"
+              itemprop="sameAs"
+            >
+              <img
+                width="32"
+                height="32"
+                src="assets/social/linkedin.svg"
+                alt="LinkedIn"
+              />
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/boradetop/" aria-label="Instagram">
-              <img src="assets/social/instagram.svg" alt="Instagram" />
+            <a
+              href="https://www.instagram.com/boradetop/"
+              aria-label="Instagram"
+              itemprop="sameAs"
+            >
+              <img
+                width="32"
+                height="32"
+                src="assets/social/instagram.svg"
+                alt="Instagram"
+              />
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/boradetop" aria-label="Twitter">
-              <img src="assets/social/twitter.svg" alt="Twitter" />
+            <a
+              href="https://twitter.com/boradetop"
+              aria-label="Twitter"
+              itemprop="sameAs"
+            >
+              <img
+                width="32"
+                height="32"
+                src="assets/social/twitter.svg"
+                alt="Twitter"
+              />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/boradetop" aria-label="Facebook">
-              <img src="assets/social/facebook.svg" alt="Facebook" />
+            <a
+              href="https://www.facebook.com/boradetop"
+              aria-label="Facebook"
+              itemprop="sameAs"
+            >
+              <img
+                width="32"
+                height="32"
+                src="assets/social/facebook.svg"
+                alt="Facebook"
+              />
             </a>
           </li>
         </ul>
       </div>
-      <img src="assets/art/mobile-menu.svg" class="lines-art" />
+      <img
+        width=""
+        height=""
+        src="assets/art/mobile-menu.svg"
+        class="lines-art"
+        alt="Mobile Menu Art"
+      />
     </div>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function () {
         const mobileMenu = document.querySelector(".mobile-menu");
         const mobileMenuButton = document.querySelector(".btn.menu");
-        const mobileMenuCloseButton = document.querySelector(".mobile-menu .close");
+        const mobileMenuCloseButton = document.querySelector(
+          ".mobile-menu .close"
+        );
         const mobileMenuArt = document.querySelector(".mobile-menu .art");
         const mobileMenuLinks = document.querySelector(".mobile-menu .links");
-        const mobileMenuLinksList = document.querySelectorAll(".mobile-menu .links li");
+        const mobileMenuLinksList = document.querySelectorAll(
+          ".mobile-menu .links li"
+        );
         const mobileMenuLinksListArray = Array.from(mobileMenuLinksList);
 
         mobileMenuButton.addEventListener("click", function () {

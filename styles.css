@@ -3,6 +3,7 @@
   src: url("assets/fonts/Gotham-Black.otf") format("opentype"); /* Specify the path to your font file */
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,6 +11,7 @@
   src: url("assets/fonts/Gotham-Medium.ttf") format("opentype"); /* Specify the path to your font file */
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 html {
@@ -103,6 +105,11 @@ header {
 ul.menu {
   display: flex;
   gap: 66px;
+}
+
+header nav,
+header nav ul {
+  height: 100%;
 }
 
 .logo a,
@@ -266,10 +273,17 @@ section.marketing .bg-lines {
   font-weight: 400;
 }
 
-.benefit .note {
+section.marketing .note {
   font-size: 10px;
   font-weight: 400;
   line-height: 150%;
+  z-index: 300;
+  position: relative;
+  display: grid;
+  grid-template-columns: 307px 285px;
+  justify-content: center;
+  gap: 224px;
+  text-align: left;
 }
 
 section.request {
@@ -439,6 +453,8 @@ section.request .request-options.row {
 .scroll.indicator {
   text-align: center;
   margin-top: 107px;
+  z-index: 300;
+    position: relative;
 }
 
 section.questions {
@@ -592,6 +608,8 @@ footer .social.links {
   display: flex;
   gap: 18px;
   margin-top: 25px;
+  z-index: 300;
+  position: relative;
 }
 
 footer .social.links :is(a, li) {
