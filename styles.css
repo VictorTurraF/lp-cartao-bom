@@ -694,6 +694,77 @@ footer .social.links :is(a, li) {
   gap: 1rem;
 }
 
+.app-popup {
+  position: fixed;
+  inset: 0;
+  z-index: -100;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, z-index 0.3s ease-in-out;
+}
+
+.app-popup .back-layer {
+  background: rgba(0, 0, 0, 0.87);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.app-popup .content {
+  z-index: 100;
+  position: relative;
+  width: 640px;
+  height: auto;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.app-popup .content .btn.close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 200;
+}
+
+.app-popup .content :is(.text-col, .qr-col) {
+  flex: 1 0 50%;
+}
+
+.app-popup .content .text-col {
+  padding: 80px 40px;
+  background: #2D7680;
+  color: #fff;
+}
+
+.app-popup .content .text-col h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 130%;
+  margin-bottom: 24px;
+}
+
+.app-popup .content .text-col p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.app-popup .content .text-col p :is(strong, b) {
+  font-weight: 700;
+}
+
+.app-popup .content .qr-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-popup.open {
+  z-index: 1000;
+  opacity: 1;
+}
+
 @media (max-width: 1400px) {
   section.questions .hero.row .topinho {
     width: 30%;
@@ -957,6 +1028,11 @@ footer .social.links :is(a, li) {
     line-height: 18px;
     width: 222px;
     margin-top: 40px;
+  }
+
+  .app-popup.open {
+    z-index: -100;
+    opacity: 0;
   }
 }
 

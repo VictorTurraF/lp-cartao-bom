@@ -74,7 +74,13 @@
           </p>
           <a href="#request" class="btn cta">Pedir meu Cartão TOP</a>
         </div>
-        <img width="32" height="64" class="scroll" src="assets/scroll.svg" alt="Scroll Icon" />
+        <img
+          width="32"
+          height="64"
+          class="scroll"
+          src="assets/scroll.svg"
+          alt="Scroll Icon"
+        />
       </section>
       <section class="marketing">
         <img
@@ -134,9 +140,14 @@
                 <strong>retirá-lo em uma das Lojas Pernambucanas</strong>
                 elegíveis.
               </p>
-              <a href="#" class="btn card-cta">Baixar App Top</a>
+              <button onclick="downloadApp();" class="btn card-cta download-app">Baixar App Top</button>
             </div>
-            <img width="393" height="258" src="assets/card-request-app.png" alt="Request Card via App" />
+            <img
+              width="393"
+              height="258"
+              src="assets/card-request-app.png"
+              alt="Request Card via App"
+            />
             <span class="info">Pelo App <br />do Top</span>
             <button class="cta">
               <svg
@@ -195,7 +206,12 @@
           </div>
         </div>
         <div class="scroll indicator">
-          <img width="32" height="64" src="assets/scroll.svg" alt="Scroll Icon" />
+          <img
+            width="32"
+            height="64"
+            src="assets/scroll.svg"
+            alt="Scroll Icon"
+          />
         </div>
       </section>
       <section class="questions" id="help">
@@ -537,6 +553,38 @@
         alt="Mobile Menu Art"
       />
     </div>
+    <div class="app-popup">
+      <div class="back-layer"></div>
+      <div class="content">
+        <div class="text-col">
+          <h4>Peça o seu TOP pelo Aplicativo</h4>
+          <p>
+            Basta
+            <strong>
+              abrir a câmera do seu celular e apontá-la para o código QR Code ao
+              lado,
+            </strong>
+            ou buscar por TOP, na loja de aplicativos do seu celular.
+          </p>
+        </div>
+        <div class="qr-col">
+          <img
+            width="203"
+            height="203"
+            src="assets/app-qr-code.svg"
+            alt="QR code para baixar o app"
+          />
+        </div>
+        <button class="btn unstyled close">
+          <img
+            width="24"
+            height="24"
+            src="assets/icons/close-black.svg"
+            alt="Botão Fechar"
+          />
+        </button>
+      </div>
+    </div>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function () {
         const mobileMenu = document.querySelector(".mobile-menu");
@@ -569,6 +617,60 @@
           });
         });
       });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const appPopup = document.querySelector(".app-popup");
+        const appPopupButton = document.querySelector(".btn.download-app");
+        const appPopupCloseButton = document.querySelector(".app-popup .close");
+        const appPopupBackLayer = document.querySelector(
+          ".app-popup .back-layer"
+        );
+
+        appPopupButton.addEventListener("click", function () {
+          addOpenClass();
+        });
+
+        appPopupCloseButton.addEventListener("click", function () {
+          removeOpenClass();
+        });
+
+        appPopupBackLayer.addEventListener("click", function () {
+          removeOpenClass();
+        });
+
+        function addOpenClass() {
+          if (window.innerWidth > 762) {
+            appPopup.classList.add("open");
+          }
+        }
+
+        function removeOpenClass() {
+          if (window.innerWidth > 762) {
+            appPopup.classList.remove("open");
+          }
+        }
+      });
+
+      function downloadApp() {
+        if (window.innerWidth <= 762) {
+          var userAgent =
+            navigator.userAgent || navigator.vendor || window.opera;
+
+          // Check if the user agent is iOS (iPhone/iPad/iPod)
+          if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            window.location.href = "https://apps.apple.com/app/id1542664234";
+          }
+          // Check if the user agent is Android
+          else if (/android/i.test(userAgent)) {
+            window.location.href =
+              "https://play.google.com/store/apps/details?id=br.com.autopass.top";
+          }
+          // For other devices or unsupported platforms
+          else {
+            alert("Sorry, the app is not available for your device.");
+          }
+        }
+      }
     </script>
   </body>
 </html>
