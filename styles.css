@@ -835,6 +835,7 @@ footer .social.links :is(a, li) {
     font-size: 33px;
   }
 
+  section.marketing .note,
   .benefits.row {
     padding: 0 58px;
     justify-content: space-between;
@@ -999,6 +1000,7 @@ footer .social.links :is(a, li) {
     letter-spacing: 9.65px;
   }
 
+  section.marketing .note,
   .benefits.row {
     grid-template-columns: 222px;
     grid-template-rows: auto auto;
@@ -1006,6 +1008,10 @@ footer .social.links :is(a, li) {
     padding: 64px 0;
     margin: 0;
     justify-content: center;
+  }
+
+  section.marketing .note {
+    padding: 0;
   }
 
   section.request h3.title {
