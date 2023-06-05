@@ -291,6 +291,7 @@
               >Ver a validade do meu Saldo no BOM</a
             >
           </div>
+          <button id="see-more-helps" class="btn unstyled see-more" data-toggle=".chips" data-active="false">ver todos</button>
         </div>
       </section>
       <footer id="contact" itemscope itemtype="http://schema.org/Organization">
@@ -605,6 +606,15 @@
       </div>
     </div>
     <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("#see-more-helps").addEventListener("click", function (event) {
+          const target = event.target;
+          document.querySelector(target.dataset.toggle).classList.toggle("active");
+          target.dataset.active = target.dataset.active === "true" ? "false" : "true";
+          target.innerText = target.dataset.active === "true" ? "ver menos" : "ver todos";
+        })
+      })
+
       document.addEventListener("DOMContentLoaded", function () {
         const mobileMenu = document.querySelector(".mobile-menu");
         const mobileMenuButton = document.querySelector(".btn.menu");

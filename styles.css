@@ -301,7 +301,7 @@ section.marketing .note {
   justify-content: center;
   gap: 224px;
   text-align: left;
-  padding: .5rem 0 0;
+  padding: 0.5rem 0 0;
 }
 
 section.request {
@@ -557,7 +557,13 @@ section.questions .top-questions {
   z-index: 200;
   width: 655px;
   margin: -30px auto 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn.see-more {
+  display: none;
 }
 
 section.questions .top-questions .title {
@@ -653,7 +659,8 @@ footer .social.links :is(a, li) {
   position: fixed;
   height: 100%;
   width: 100%;
-  inset: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  inset: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
   z-index: 1100;
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
@@ -971,7 +978,7 @@ footer .social.links :is(a, li) {
 
   .btn.cta {
     font-size: 14px;
-    line-height: 15px;  
+    line-height: 15px;
   }
 
   footer .hero {
@@ -1062,7 +1069,7 @@ footer .social.links :is(a, li) {
   }
 
   section.marketing .note {
-    padding: .5rem 0 0 0;
+    padding: 0.5rem 0 0 0;
     gap: 0;
   }
 
@@ -1203,6 +1210,31 @@ footer .social.links :is(a, li) {
 
   .scroll.indicator {
     margin-top: 64px;
+  }
+
+  section.questions .chips {
+    max-height: calc(32px * 2 + 0.5rem);
+    height: calc(32px * 2 + 0.5rem);
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .btn.see-more {
+    display: block;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: none;
+    text-decoration-line: underline;
+    color: #1ebdc1;
+    margin: .5rem auto 0 0 !important;
+  }
+
+  section.questions .chips.active {
+    max-height: unset;
+    height: auto;
   }
 
   footer .hero {
