@@ -140,6 +140,7 @@ section.hero {
     rgba(0, 0, 0, 0) 105.28%
   );
   line-height: 0;
+  width: 100%;
 }
 
 section.hero .content {
@@ -207,6 +208,14 @@ section.hero .scroll {
 
 .btn.cta {
   margin-top: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  background-blend-mode: overlay;
+  border: 1px solid #1ecad3;
+  box-shadow: 2.83122px 2.83122px 4.71869px rgba(0, 0, 0, 0.1);
+  border-radius: 3.77495px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 section.marketing {
@@ -284,6 +293,7 @@ section.marketing .note {
   justify-content: center;
   gap: 224px;
   text-align: left;
+  padding: .5rem 0 0;
 }
 
 section.request {
@@ -356,6 +366,7 @@ section.request .request-options.row {
 }
 
 .request-options .card {
+  -webkit-border-radius: 18px;
   border-radius: 18px;
   position: relative;
   width: 395px;
@@ -387,6 +398,13 @@ section.request .request-options.row {
   padding: 24px;
 }
 
+.request-options .card .hover .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
 .request-options .card .hover .card-cta {
   display: inline-block;
   background: rgba(255, 255, 255, 0.8);
@@ -394,7 +412,6 @@ section.request .request-options.row {
   border: 1px solid #2abfc5;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  margin-top: 30px;
 }
 
 .request-options .card .hover p {
@@ -454,7 +471,7 @@ section.request .request-options.row {
   text-align: center;
   margin-top: 107px;
   z-index: 300;
-    position: relative;
+  position: relative;
 }
 
 section.questions {
@@ -623,7 +640,7 @@ footer .social.links :is(a, li) {
   inset: 0;
   z-index: 1100;
   transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
 }
@@ -734,7 +751,7 @@ footer .social.links :is(a, li) {
 
 .app-popup .content .text-col {
   padding: 80px 40px;
-  background: #2D7680;
+  background: #2d7680;
   color: #fff;
 }
 
@@ -804,6 +821,11 @@ footer .social.links :is(a, li) {
 }
 
 @media (max-width: 1024px) {
+  section.hero .back-image {
+    position: absolute;
+    inset: 0;
+  }
+
   footer .hero {
     font-size: 45px;
   }
@@ -820,7 +842,8 @@ footer .social.links :is(a, li) {
   }
 
   section.hero {
-    height: 650px;
+    /* height: 650px; */
+    min-height: 100vh;
   }
 
   section.marketing .bg-lines {
@@ -904,6 +927,11 @@ footer .social.links :is(a, li) {
     margin-left: 27px;
   }
 
+  header .logo img {
+    width: 58px;
+    height: 28px;
+  }
+
   ul.menu {
     display: none;
   }
@@ -923,6 +951,11 @@ footer .social.links :is(a, li) {
 
   footer .company-information {
     gap: 24px;
+  }
+
+  .btn.cta {
+    font-size: 14px;
+    line-height: 15px;  
   }
 
   footer .hero {
@@ -967,7 +1000,7 @@ footer .social.links :is(a, li) {
   }
 
   section.marketing {
-    padding: 0;
+    padding: 1rem 0 35px;
   }
 
   section.marketing .bg-lines {
@@ -977,7 +1010,8 @@ footer .social.links :is(a, li) {
   section.marketing .card-img {
     width: 199px;
     height: 239px;
-    margin-bottom: -5rem;
+    margin-bottom: -91px;
+    margin-left: -42px;
   }
 
   section.marketing h3 {
@@ -997,7 +1031,8 @@ footer .social.links :is(a, li) {
   }
 
   section.marketing h4 > span:last-child {
-    letter-spacing: 9.65px;
+    letter-spacing: 10px;
+    margin-left: 4px;
   }
 
   section.marketing .note,
@@ -1005,13 +1040,14 @@ footer .social.links :is(a, li) {
     grid-template-columns: 222px;
     grid-template-rows: auto auto;
     gap: 40px;
-    padding: 64px 0;
+    padding: 64px 0 0;
     margin: 0;
     justify-content: center;
   }
 
   section.marketing .note {
-    padding: 0;
+    padding: .5rem 0 0 0;
+    gap: 0;
   }
 
   section.request h3.title {
@@ -1061,6 +1097,14 @@ footer .social.links :is(a, li) {
     font-size: 14px;
   }
 
+  section.hero .content p:first-of-type {
+    max-width: 200px;
+  }
+
+  section.hero .content p:nth-of-type(2) {
+    max-width: 232px;
+  }
+
   section.hero .intro {
     font-size: 1rem;
   }
@@ -1071,11 +1115,8 @@ footer .social.links :is(a, li) {
   }
 
   section.hero .back-image {
-    position: absolute;
-    inset: 0;
     height: 100%;
     object-fit: cover;
-    object-position: 60% 50%;
   }
 
   section.hero .content .new-logo {
@@ -1136,7 +1177,7 @@ footer .social.links :is(a, li) {
     top: -4px;
   }
 
-  section.questions .title {
+  section.questions .hero .title {
     width: 190px;
   }
 
@@ -1162,6 +1203,15 @@ footer .social.links :is(a, li) {
   section.questions .chips .btn {
     font-size: 12px;
     font-weight: 400;
+  }
+
+  .request-options .card .hover p {
+    font-size: 12px;
+  }
+
+  section.questions .bg {
+    top: 130px;
+    height: calc(100% - 130px);
   }
 }
 

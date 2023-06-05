@@ -22,7 +22,7 @@
     <header>
       <h1 class="logo">
         <a href="#" aria-label="Homepage">
-          <img width="75" height="32" src="assets/logos/bom.svg" alt="Logo" />
+          <img width="75" height="32" src="assets/logos/bom.png" alt="Logo" />
         </a>
       </h1>
       <nav>
@@ -38,13 +38,11 @@
     </header>
     <main>
       <section class="hero">
-        <img
-          width="1514"
-          height="873"
-          class="back-image"
-          src="assets/hero-desktop.png"
-          alt="Hero Background Image"
-        />
+        <picture>
+          <source media="(max-width: 425px)" srcset="assets/hero-mobile.png" />
+          <source media="(max-width: 1500px)" srcset="assets/hero-desktop.png" />
+          <img class="back-image" src="assets/hero-desktop.png" alt="Hero Background Image" />
+        </picture>
         <div class="content">
           <h2 class="intro">
             O Cartão
@@ -52,7 +50,7 @@
               width="65"
               height="33"
               class="logo"
-              src="assets/logos/bom.svg"
+              src="assets/logos/bom.png"
               alt="Logo BOM"
             />
             agora é
@@ -83,13 +81,17 @@
         />
       </section>
       <section class="marketing">
-        <img
-          width="1514"
-          height="1846"
-          class="bg-lines"
-          src="assets/linhas-bg.svg"
-          alt="Linhas Background"
-        />
+        <picture>
+          <source media="(max-width: 425px)" srcset="assets/bg-lines-mobile.svg" />
+          <source media="(max-width: 1500px)" srcset="assets/bg-lines.svg" /> 
+          <img
+            width="1514"
+            height="1846"
+            class="bg-lines"
+            src="assets/linhas-bg.svg"
+            alt="Linhas Background"
+          />
+        </picture>
         <img
           width="463"
           height="562"
@@ -134,13 +136,20 @@
         <div class="request-options row">
           <div class="card">
             <div class="hover">
-              <p>
-                Após realizar o seu cadastro no App e solicitar o Cartão, você
-                poderá escolher entre <strong>recebê-lo em casa</strong> ou
-                <strong>retirá-lo em uma das Lojas Pernambucanas</strong>
-                elegíveis.
-              </p>
-              <button onclick="downloadApp();" class="btn card-cta download-app">Baixar App Top</button>
+              <div class="info">
+                <p>
+                  Após realizar o seu cadastro no App e solicitar o Cartão, você
+                  poderá escolher entre <strong>recebê-lo em casa</strong> ou
+                  <strong>retirá-lo em uma das Lojas Pernambucanas</strong>
+                  elegíveis.
+                </p>
+              </div>
+              <button
+                onclick="downloadApp();"
+                class="btn card-cta download-app"
+              >
+                Baixar App Top
+              </button>
             </div>
             <img
               width="393"
@@ -166,18 +175,20 @@
           </div>
           <div class="card">
             <div class="hover">
-              <p>
-                Acesse o
-                <a href="https://vico158.gendo.app/v2/#/"
-                  ><strong>link de agendamento</strong></a
-                >
-                e agende sua ida à Loja Pernambucanas mais próxima.
-              </p>
-              <p>
-                Depois basta
-                <strong>ir à Loja no dia e horário escolhidos</strong>, com um
-                documento com foto.
-              </p>
+              <div class="info">
+                <p>
+                  Acesse o
+                  <a href="https://vico158.gendo.app/v2/#/"
+                    ><strong>link de agendamento</strong></a
+                  >
+                  e agende sua ida à Loja Pernambucanas mais próxima.
+                </p>
+                <p>
+                  Depois basta
+                  <strong>ir à Loja no dia e horário escolhidos</strong>, com um
+                  documento com foto.
+                </p>
+              </div>
               <a href="https://vico158.gendo.app/v2/#/" class="btn card-cta"
                 >Agendar Horário</a
               >
@@ -215,13 +226,17 @@
         </div>
       </section>
       <section class="questions" id="help">
-        <img
-          width="1440"
-          height="632"
-          class="bg"
-          src="assets/grafismo.svg"
-          alt="Background Graphic"
-        />
+        <picture>
+          <source media="(max-width: 425px)" srcset="assets/grafismo-mobile.svg" />
+          <source media="(max-width: 1500px)" srcset="assets/grafismo.svg" />
+          <img
+            width="1440"
+            height="632"
+            class="bg"
+            src="assets/grafismo.svg"
+            alt="Background Graphic"
+          />
+        </picture>
         <div class="hero row">
           <img
             width="571"
@@ -430,7 +445,7 @@
           width="74"
           height="33"
           class="logo"
-          src="assets/logos/bom.svg"
+          src="assets/logos/bom.png"
           alt="Logo BOM"
           itemprop="logo"
         />
