@@ -14,6 +14,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Gotham";
+  src: url("assets/fonts/Gotham-Book.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -533,6 +541,10 @@ section.questions .info .btn {
   margin-top: 1rem;
 }
 
+section.questions .info .btn.help {
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
 section.questions .hero.row {
   display: flex;
   gap: 40px;
@@ -602,6 +614,7 @@ footer .hero {
   right: 93px;
   top: 50%;
   transform: translateY(-50%);
+  font-family: "Gotham";
 }
 
 footer .hero .logo-wrapper {
@@ -611,14 +624,15 @@ footer .hero .logo-wrapper {
 
 footer .hero .logo {
   position: absolute;
-  top: 32px;
-  left: 63px;
+  top: 0;
+  left: 77px;
   z-index: 200;
 }
 
 footer .hero .lead {
   font-weight: 500;
   color: #1ecad3;
+  font-family: "Gotham HTF";
 }
 
 footer .social.links {
@@ -637,7 +651,9 @@ footer .social.links :is(a, li) {
 .mobile-menu {
   background: #cad8d9;
   position: fixed;
-  inset: 0;
+  height: 100%;
+  width: 100%;
+  inset: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   z-index: 1100;
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
@@ -797,8 +813,8 @@ footer .social.links :is(a, li) {
   footer .hero .logo {
     width: 61px;
     height: 61px;
-    top: 24px;
-    left: 49px;
+    top: 0px;
+    left: 63px;
   }
 
   section.hero .content {
@@ -833,8 +849,8 @@ footer .social.links :is(a, li) {
   footer .hero .logo {
     width: 34px;
     height: 34px;
-    top: 15px;
-    left: 29px;
+    top: 1px;
+    left: 35px;
   }
 
   section.hero .content {
@@ -972,8 +988,8 @@ footer .social.links :is(a, li) {
   footer .hero .logo {
     width: 51px;
     height: 51px;
-    top: 24px;
-    left: 45px;
+    top: 2px;
+    left: 55px;
   }
 
   section.hero .content {
@@ -1097,6 +1113,10 @@ footer .social.links :is(a, li) {
     font-size: 14px;
   }
 
+  :is(button, a).btn {
+    font-size: 14px;
+  }
+
   section.hero .content p:first-of-type {
     max-width: 200px;
   }
@@ -1186,14 +1206,27 @@ footer .social.links :is(a, li) {
   }
 
   footer .hero {
-    font-size: 44px;
+    font-size: 11.3vw;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    line-height: 60px;
   }
 
   footer .hero .logo {
-    width: 33px;
-    height: 33px;
-    top: 14px;
-    left: 27px;
+    width: 8.5vw;
+    height: 8.5vw;
+    top: 0;
+    left: 9vw;
+  }
+
+  footer > .logo {
+    width: 103px;
+    height: 17px;
+  }
+
+  .company-information li {
+    font-size: 12px;
+    font-weight: 400;
   }
 
   .request-options .card:nth-child(2) {
@@ -1213,6 +1246,23 @@ footer .social.links :is(a, li) {
     top: 130px;
     height: calc(100% - 130px);
   }
+
+  .scroll.indicator img {
+    width: 17px;
+    height: 33px;
+  }
+
+  footer .bg {
+    width: 225px;
+    height: 346px;
+  }
+}
+
+@media (max-width: 380px) {
+  section.questions .hero.row .topinho {
+    width: 40vw;
+    height: 40vw;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1229,9 +1279,9 @@ footer .social.links :is(a, li) {
   }
 
   footer .hero .logo {
-    width: 28px;
-    height: 28px;
-    top: 13px;
-    left: 24px;
+    width: 29px;
+    height: 29px;
+    top: 0px;
+    left: 30px;
   }
 }
