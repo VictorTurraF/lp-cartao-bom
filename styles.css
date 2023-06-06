@@ -474,6 +474,7 @@ section.request .request-options.row {
   position: relative;
   z-index: 200;
   text-transform: uppercase;
+  padding-top: 20px;
 }
 
 .scroll.indicator {
