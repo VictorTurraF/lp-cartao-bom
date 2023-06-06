@@ -377,7 +377,8 @@ section.request .request-options.row {
   -webkit-border-radius: 18px;
   border-radius: 18px;
   position: relative;
-  width: 395px;
+  max-width: 395px;
+  width: 100%;
   height: 260px;
   padding: 0 20px 64px;
   display: flex;
@@ -621,11 +622,15 @@ footer .hero {
   top: 50%;
   transform: translateY(-50%);
   font-family: "Gotham";
+  color: #4A4A4A;
 }
 
 footer .hero .logo-wrapper {
   position: relative;
   display: inline;
+  color: #4A4A4A;
+  background: transparent;
+  z-index: 200;
 }
 
 footer .hero .logo {
@@ -1113,6 +1118,31 @@ footer .social.links :is(a, li) {
   section.hero .content p:nth-of-type(2) {
     width: auto;
   }
+
+  section.questions .chips {
+    max-height: calc(32px * 2 + 0.5rem);
+    height: calc(32px * 2 + 0.5rem);
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .btn.see-more {
+    display: block;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: none;
+    text-decoration-line: underline;
+    color: #1ebdc1;
+    margin: .5rem auto 0 0 !important;
+  }
+
+  section.questions .chips.active {
+    max-height: unset;
+    height: auto;
+  }
 }
 
 @media (max-width: 425px) {
@@ -1210,31 +1240,6 @@ footer .social.links :is(a, li) {
 
   .scroll.indicator {
     margin-top: 64px;
-  }
-
-  section.questions .chips {
-    max-height: calc(32px * 2 + 0.5rem);
-    height: calc(32px * 2 + 0.5rem);
-    overflow: hidden;
-    transition: height 0.3s ease-in-out;
-  }
-
-  .btn.see-more {
-    display: block;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
-    text-transform: none;
-    text-decoration-line: underline;
-    color: #1ebdc1;
-    margin: .5rem auto 0 0 !important;
-  }
-
-  section.questions .chips.active {
-    max-height: unset;
-    height: auto;
   }
 
   footer .hero {
