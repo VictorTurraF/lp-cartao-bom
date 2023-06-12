@@ -1239,11 +1239,11 @@ footer .hero > .logo-img {
   }
 
   section.hero .scroll {
+    position: relative;
     width: 17px;
     height: 33px;
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 24px;
+    right: unset;
+    bottom: unset;
   }
 
   section.request {
