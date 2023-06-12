@@ -212,6 +212,8 @@ section.hero .scroll {
   right: 68px;
   bottom: 106px;
   z-index: 200;
+  margin: 72px auto 24px;
+  display: block;
 }
 
 .btn.cta {
@@ -380,10 +382,10 @@ section.request .request-options.row {
   max-width: 395px;
   width: 100%;
   height: 260px;
-  padding: 0 20px 64px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   overflow: hidden;
   cursor: pointer;
   border: 1px solid #000;
@@ -434,6 +436,14 @@ section.request .request-options.row {
 
 .request-options .card:hover .hover {
   opacity: 1;
+}
+
+.request-options .card > :is(.info, .cta) {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.request-options .card:hover > :is(.info, .cta) {
+  opacity: 0;
 }
 
 .request-options .card .hover p a {
@@ -623,13 +633,13 @@ footer .hero {
   top: 50%;
   transform: translateY(-50%);
   font-family: "Gotham";
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 footer .hero .logo-wrapper {
   position: relative;
   display: inline-flex;
-  color: #4A4A4A;
+  color: #4a4a4a;
   background: transparent;
   z-index: 200;
 }
@@ -658,6 +668,13 @@ footer .social.links {
 footer .social.links :is(a, li) {
   display: block;
   line-height: 0;
+}
+
+footer .hero > .logo-img {
+  height: 89px;
+  width: 247px;
+  object-fit: cover;
+  margin-bottom: -15px;
 }
 
 .mobile-menu {
@@ -830,6 +847,12 @@ footer .social.links :is(a, li) {
     left: 61px;
   }
 
+  footer .hero > .logo-img {
+    height: 71px;
+    width: 199px;
+    margin-bottom: -11px;
+  }
+
   section.hero .content {
     margin-top: 120px;
   }
@@ -864,6 +887,12 @@ footer .social.links :is(a, li) {
     height: 34px;
     top: 13px;
     left: 34px;
+  }
+
+  footer .hero > .logo-img {
+    height: 40px;
+    width: 109px;
+    margin-bottom: -6px;
   }
 
   section.hero .content {
@@ -978,6 +1007,12 @@ footer .social.links :is(a, li) {
     margin-bottom: 24px;
   }
 
+  footer .hero > .logo-img {
+    height: 62px;
+    width: 176px;
+    margin-bottom: -10px;
+  }
+
   footer .company-information {
     gap: 24px;
   }
@@ -1006,7 +1041,7 @@ footer .social.links :is(a, li) {
   }
 
   section.hero .content {
-    margin: 139px 24px 129px;
+    margin: 139px 24px 0;
   }
 
   section.hero .scroll {
@@ -1137,7 +1172,7 @@ footer .social.links :is(a, li) {
     text-transform: none;
     text-decoration-line: underline;
     color: #1ebdc1;
-    margin: .5rem auto 0 0 !important;
+    margin: 0.5rem auto 0 0 !important;
   }
 
   section.questions .chips.active {
@@ -1168,7 +1203,7 @@ footer .social.links :is(a, li) {
   }
 
   section.hero .content {
-    margin: 139px 24px 129px;
+    margin: 139px 24px 0;
     position: relative;
   }
 
@@ -1258,6 +1293,12 @@ footer .social.links :is(a, li) {
     left: 8.7vw;
   }
 
+  footer .hero > .logo-img {
+    height: 10vw;
+    width: 28vw;
+    margin-bottom: -5px;
+  }
+
   footer > .logo {
     width: 103px;
     height: 17px;
@@ -1322,5 +1363,11 @@ footer .social.links :is(a, li) {
     height: 29px;
     top: 13px;
     left: 30px;
+  }
+
+  footer .hero > .logo-img {
+    height: 34px;
+    width: 94px;
+    margin-bottom: -6px;
   }
 }

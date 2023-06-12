@@ -40,8 +40,15 @@
       <section class="hero">
         <picture>
           <source media="(max-width: 425px)" srcset="assets/hero-mobile.png" />
-          <source media="(max-width: 1500px)" srcset="assets/hero-desktop.png" />
-          <img class="back-image" src="assets/hero-desktop.png" alt="Hero Background Image" />
+          <source
+            media="(max-width: 1500px)"
+            srcset="assets/hero-desktop.png"
+          />
+          <img
+            class="back-image"
+            src="assets/hero-desktop.png"
+            alt="Hero Background Image"
+          />
         </picture>
         <div class="content">
           <h2 class="intro">
@@ -82,8 +89,11 @@
       </section>
       <section class="marketing">
         <picture>
-          <source media="(max-width: 425px)" srcset="assets/bg-lines-mobile.svg" />
-          <source media="(max-width: 1500px)" srcset="assets/bg-lines.svg" /> 
+          <source
+            media="(max-width: 425px)"
+            srcset="assets/bg-lines-mobile.svg"
+          />
+          <source media="(max-width: 1500px)" srcset="assets/bg-lines.svg" />
           <img
             width="1514"
             height="1846"
@@ -177,11 +187,8 @@
             <div class="hover">
               <div class="info">
                 <p>
-                  Acesse o
-                  <a href="https://vico158.gendo.app/v2/#/"
-                    ><strong>link de agendamento</strong></a
-                  >
-                  e agende sua ida à Loja Pernambucanas mais próxima.
+                  Acesse o link e agende sua ida à Loja Pernambucanas mais
+                  próxima.
                 </p>
                 <p>
                   Depois basta
@@ -227,7 +234,10 @@
       </section>
       <section class="questions" id="help">
         <picture>
-          <source media="(max-width: 768px)" srcset="assets/grafismo-mobile.svg" />
+          <source
+            media="(max-width: 768px)"
+            srcset="assets/grafismo-mobile.svg"
+          />
           <source media="(max-width: 1500px)" srcset="assets/grafismo.svg" />
           <img
             width="1440"
@@ -291,27 +301,36 @@
               >Ver a validade do meu Saldo no BOM</a
             >
           </div>
-          <button id="see-more-helps" class="btn unstyled see-more" data-toggle=".chips" data-active="false">ver todos</button>
+          <button
+            id="see-more-helps"
+            class="btn unstyled see-more"
+            data-toggle=".chips"
+            data-active="false"
+          >
+            ver todos
+          </button>
         </div>
       </section>
       <footer id="contact" itemscope itemtype="http://schema.org/Organization">
         <div class="hero">
           O
-          <div class="logo-wrapper">
-            BOM<img
-              width=""
-              height=""
-              class="logo"
-              src="assets/logos/mini-bom.png"
-              alt="BOM Logo"
-            />
-          </div>
+          <img
+            class="logo-img"
+            src="assets/bom-escrito.png"
+            alt="BOM Logo"
+          />
           <br />
           AGORA É <span class="lead">TOP!</span>
         </div>
         <picture>
-          <source media="(max-width: 425px)" srcset="assets/grafismo-footer-mobile.svg" />
-          <source media="(max-width: 1500px)" srcset="assets/grafismo-footer.svg" />
+          <source
+            media="(max-width: 425px)"
+            srcset="assets/grafismo-footer-mobile.svg"
+          />
+          <source
+            media="(max-width: 1500px)"
+            srcset="assets/grafismo-footer.svg"
+          />
           <img
             width="736"
             height="683"
@@ -607,13 +626,19 @@
     </div>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function () {
-        document.querySelector("#see-more-helps").addEventListener("click", function (event) {
-          const target = event.target;
-          document.querySelector(target.dataset.toggle).classList.toggle("active");
-          target.dataset.active = target.dataset.active === "true" ? "false" : "true";
-          target.innerText = target.dataset.active === "true" ? "ver menos" : "ver todos";
-        })
-      })
+        document
+          .querySelector("#see-more-helps")
+          .addEventListener("click", function (event) {
+            const target = event.target;
+            document
+              .querySelector(target.dataset.toggle)
+              .classList.toggle("active");
+            target.dataset.active =
+              target.dataset.active === "true" ? "false" : "true";
+            target.innerText =
+              target.dataset.active === "true" ? "ver menos" : "ver todos";
+          });
+      });
 
       document.addEventListener("DOMContentLoaded", function () {
         const mobileMenu = document.querySelector(".mobile-menu");
