@@ -655,19 +655,23 @@
 
         mobileMenuButton.addEventListener("click", function () {
           mobileMenu.classList.add("open");
+          document.body.classList.add("lock-scroll");
         });
 
         mobileMenuCloseButton.addEventListener("click", function () {
           mobileMenu.classList.remove("open");
+          document.body.classList.remove("lock-scroll");
         });
 
         mobileMenuArt.addEventListener("click", function () {
           mobileMenu.classList.remove("open");
+          document.body.classList.remove("lock-scroll");
         });
 
         mobileMenuLinksListArray.forEach(function (item) {
           item.addEventListener("click", function () {
             mobileMenu.classList.remove("open");
+            document.body.classList.remove("lock-scroll");
           });
         });
       });
