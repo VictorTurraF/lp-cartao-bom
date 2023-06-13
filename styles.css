@@ -604,6 +604,7 @@ footer .bg {
   top: 0;
   left: 0;
   z-index: 100;
+  object-fit: contain;
 }
 
 footer > .logo {
@@ -1185,7 +1186,7 @@ footer .hero > .logo-img {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   p {
     font-size: 14px;
   }
