@@ -1197,11 +1197,11 @@ footer .hero > .logo-img {
   }
 
   section.hero .content p:first-of-type {
-    max-width: 200px;
+    max-width: 256px;
   }
 
   section.hero .content p:nth-of-type(2) {
-    max-width: 232px;
+    max-width: 256px;
   }
 
   section.hero .intro {
