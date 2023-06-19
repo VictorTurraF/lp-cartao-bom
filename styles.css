@@ -88,6 +88,7 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+  letter-spacing: 0px;
 }
 
 b,
@@ -195,7 +196,7 @@ section.hero .content p {
 }
 
 section.hero .content p:first-of-type {
-  width: 475px;
+  width: 440px;
   display: block;
 }
 
@@ -1224,6 +1225,7 @@ footer .hero > .logo-img {
 
   section.hero .content p {
     font-size: 14px;
+    letter-spacing: 0;
   }
 
   section.hero {
@@ -1374,5 +1376,11 @@ footer .hero > .logo-img {
     height: 34px;
     width: 94px;
     margin-bottom: -6px;
+  }
+}
+
+@media (min-width: 450px) {
+  br.mobile {
+    display: none;
   }
 }
