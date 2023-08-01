@@ -343,6 +343,7 @@ section.hero .scroll {
   border-radius: 3.77495px;
   font-weight: 400;
   font-size: 16px;
+  width: 273px;
 }
 
 section.marketing {
@@ -367,7 +368,7 @@ section.marketing h4 {
 }
 
 section.marketing h4 {
-  text-shadow: -5px 8px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: -2px 4px 7px rgba(0, 0, 0, 0.2);
   letter-spacing: 10px;
   -webkit-text-fill-color: #cad8d9; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
@@ -384,8 +385,8 @@ section.marketing .card-img {
   margin-bottom: -10rem;
   z-index: 200;
   position: relative;
-  left: -17px;
-  top: 5px;
+  left: -15px;
+  top: 4px;
 }
 
 section.marketing .bg-lines {
@@ -553,6 +554,7 @@ section.request .request-options.row {
   border: 1px solid #2abfc5;
   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  line-height: 100%;
 }
 
 .request-options .card .hover p {
@@ -607,7 +609,7 @@ section.request .request-options.row {
 
 .request-options .card > .info {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 136%;
   font-family: "Arial", sans-serif;
   color: #fff;
@@ -813,6 +815,10 @@ footer .hero > .logo-img {
   width: 247px;
   object-fit: cover;
   margin-bottom: -15px;
+}
+
+.hide-only-in-desk {
+  display: none;
 }
 
 .mobile-menu {
@@ -1159,6 +1165,7 @@ footer .hero > .logo-img {
     font-size: 14px;
     line-height: normal;
     padding: 1rem 40px;
+    width: auto;
   }
 
   footer .hero {
@@ -1278,6 +1285,10 @@ footer .hero > .logo-img {
     line-height: 18px;
     width: 222px;
     margin-top: 40px;
+  }
+
+  .hide-only-in-desk {
+    display: initial;
   }
 
   .app-popup.open {
