@@ -22,6 +22,118 @@
   font-display: swap;
 }
 
+/* Font Weight: Bold (700) */
+@font-face {
+  font-family: 'Arial';
+  font-weight: 700;
+  src: url('assets/fonts/ARIALBD.woff') format('woff');
+}
+
+/* Font Weight: Bold Italic (700 Italic) */
+@font-face {
+  font-family: 'Arial';
+  font-weight: 700;
+  font-style: italic;
+  src: url('assets/fonts/ARIALBI.woff') format('woff');
+}
+
+/* Font Weight: Black Italic */
+@font-face {
+  font-family: 'Arial';
+  font-weight: 900; /* Use 900 for 'Black' */
+  font-style: italic;
+  src: url('assets/fonts/ARIALBLACKITALIC.woff') format('woff');
+}
+
+/* Font Weight: Italic (400 Italic) */
+@font-face {
+  font-family: 'Arial';
+  font-weight: 400;
+  font-style: italic;
+  src: url('assets/fonts/ARIALI.woff') format('woff');
+}
+
+/* Font Weight: Light (300) */
+@font-face {
+  font-family: 'Arial';
+  font-weight: 300;
+  src: url('assets/fonts/ARIALN.woff') format('woff');
+}
+
+/* Font Weight: Normal / Regular (400) */
+@font-face {
+  font-family: 'Arial';
+  font-weight: 400;
+  src: url('assets/fonts/ARIAL.woff') format('woff');
+}
+
+/* Font Weight: Medium (500) */
+@font-face {
+  font-family: 'Arial';
+  font-weight: 500;
+  src: url('assets/fonts/ARIALMdm.woff') format('woff');
+}
+
+/* Font Weight: Medium Italic (500 Italic) */
+@font-face {
+  font-family: 'Arial';
+  font-weight: 500;
+  font-style: italic;
+  src: url('assets/fonts/ArialMdmItl.woff') format('woff');
+}
+
+/* Font Weight: Light Italic (300 Italic) */
+@font-face {
+  font-family: 'Arial';
+  font-weight: 300;
+  font-style: italic;
+  src: url('assets/fonts/ARIALNI.woff') format('woff');
+}
+
+/* Font Weight: Black (900) */
+@font-face {
+  font-family: 'Arial';
+  font-weight: 900;
+  src: url('assets/fonts/ARIBLK.woff') format('woff');
+}
+
+/* Font Weight: Normal / Regular (400) - Example for font-weight: normal */
+@font-face {
+  font-family: 'Arial';
+  font-weight: normal; /* Use 'normal' for regular */
+  src: url('assets/fonts/ARIAL.woff') format('woff');
+}
+
+/* Font Weight: Normal / Regular (400) */
+@font-face {
+  font-family: 'Tahoma';
+  font-weight: 400;
+  src: url('assets/fonts/Tahoma Regular font.ttf') format('truetype');
+}
+
+/* Font Weight: Bold (700) */
+@font-face {
+  font-family: 'Tahoma';
+  font-weight: 700;
+  src: url('assets/fonts/TAHOMABD.TTF') format('truetype');
+}
+
+/* Font Weight: Bold Italic (700 Italic) */
+@font-face {
+  font-family: 'Tahoma';
+  font-weight: 700;
+  font-style: italic;
+  src: url('assets/fonts/TAHOMAB0.TTF') format('truetype');
+}
+
+/* Font Weight: Italic (400 Italic) */
+@font-face {
+  font-family: 'Tahoma';
+  font-weight: 400;
+  font-style: italic;
+  src: url('assets/fonts/TAHOMA_0.TTF') format('truetype');
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -66,9 +178,9 @@ a.btn {
   border: 1px solid #1ecad3;
   background: rgba(255, 255, 255, 0.25);
   background-blend-mode: overlay;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: normal;
   text-transform: uppercase;
   color: #1ecad3;
 }
@@ -97,7 +209,7 @@ strong {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 130%;
   color: #333;
@@ -130,7 +242,7 @@ ul.menu li a {
   display: flex;
   align-items: center;
   height: 100%;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
   color: #fff;
   transition: color 0.2s ease-in-out;
@@ -170,6 +282,7 @@ section.hero .intro {
   align-items: center;
   font-weight: 500;
   font-size: 24px;
+  font-family: "Arial";
   line-height: 130%;
   color: #fff;
   text-transform: uppercase;
@@ -222,15 +335,14 @@ section.hero .scroll {
 }
 
 .btn.cta {
-  margin-top: 24px;
+  margin-top: .5rem;
   background: rgba(255, 255, 255, 0.05);
   background-blend-mode: overlay;
   border: 1px solid #1ecad3;
   box-shadow: 2.83122px 2.83122px 4.71869px rgba(0, 0, 0, 0.1);
   border-radius: 3.77495px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
 }
 
 section.marketing {
@@ -242,8 +354,8 @@ section.marketing {
 
 section.marketing h3,
 section.marketing h4 {
-  font-family: "Gotham Black", sans-serif;
-  font-weight: 500;
+  font-family: "Tahoma", sans-serif;
+  font-weight: 700;
   font-size: 60px;
   text-transform: uppercase;
   color: #fff;
@@ -255,12 +367,17 @@ section.marketing h4 {
 }
 
 section.marketing h4 {
-  text-shadow: -15px 8px 10px rgba(0, 0, 0, 0.05);
+  text-shadow: -5px 8px 10px rgba(0, 0, 0, 0.2);
   letter-spacing: 10px;
-  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: #cad8d9; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   margin-top: -1rem;
+}
+
+section.marketing h4 > span {
+  letter-spacing: 10px;
+  font-weight: 700;
 }
 
 section.marketing .card-img {
@@ -296,7 +413,7 @@ section.marketing .bg-lines {
 }
 
 .benefit .obs {
-  margin: 0.5rem 0 1rem;
+  margin: 0.5rem 0;
   font-weight: 400;
 }
 
@@ -343,8 +460,8 @@ section.request .decorator {
 }
 
 section.request h3.title {
-  font-weight: 500;
-  font-family: "Gotham Black", sans-serif;
+  font-weight: 700;
+  font-family: "Tahoma", sans-serif;
   font-size: 60px;
   text-transform: uppercase;
   color: #4a4a4a;
@@ -361,8 +478,8 @@ section.request .decorator span:last-child {
 }
 
 section.request .decorator span {
-  font-weight: 500;
-  font-family: "Gotham Black", sans-serif;
+  font-weight: 700;
+  font-family: "Tahoma", sans-serif;
   font-size: 80px;
   text-transform: uppercase;
   color: #4a4a4a;
@@ -373,6 +490,10 @@ section.request .decorator span {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   white-space: nowrap;
+}
+
+section.request h3.title > span {
+  font-weight: inherit;
 }
 
 section.request .request-options.row {
@@ -436,6 +557,7 @@ section.request .request-options.row {
 
 .request-options .card .hover p {
   color: #4a4a4a;
+  font-family: "Arial";
 }
 
 .request-options .card .hover p:not(:first-child) {
@@ -485,9 +607,9 @@ section.request .request-options.row {
 
 .request-options .card > .info {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 136%;
-  font-family: "Gotham HTF", sans-serif;
+  font-family: "Arial", sans-serif;
   color: #fff;
   position: relative;
   z-index: 200;
@@ -518,9 +640,9 @@ section.questions .bg {
 }
 
 section.questions .title {
-  font-family: "Gotham Black";
+  font-family: "Tahoma";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 60px;
   line-height: 70%;
   color: #4a4a4a;
@@ -530,12 +652,13 @@ section.questions .title {
 
 section.questions .title .lead {
   color: #1ecad3;
+  font-weight: inherit;
 }
 
 section.questions .title .sm {
-  font-family: "Gotham Black";
+  font-family: "Tahoma";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 27.5px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -547,7 +670,7 @@ section.questions .info {
 }
 
 section.questions .info .text {
-  font-family: "Poppins";
+  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -626,10 +749,16 @@ footer .company-information {
 .company-information li {
   display: flex;
   flex-direction: column;
+  color: #4A4A4A;
 }
 
 .company-information li .label {
-  font-weight: 600;
+  font-weight: 700;
+  color: #1E1E1E;
+}
+
+footer span.address {
+  color: #1E1E1E;
 }
 
 footer .hero {
@@ -641,7 +770,7 @@ footer .hero {
   right: 93px;
   top: 50%;
   transform: translateY(-50%);
-  font-family: "Gotham";
+  font-family: "Arial";
   color: #4a4a4a;
 }
 
@@ -858,8 +987,8 @@ footer .hero > .logo-img {
 
   footer .hero > .logo-img {
     height: 71px;
-    width: 199px;
-    margin-bottom: -11px;
+    width: 187px;
+    margin-bottom: -7px;
   }
 
   section.hero .content {
@@ -1019,7 +1148,7 @@ footer .hero > .logo-img {
   footer .hero > .logo-img {
     height: 62px;
     width: 176px;
-    margin-bottom: -10px;
+    margin-bottom: -4px;
   }
 
   footer .company-information {
@@ -1028,7 +1157,8 @@ footer .hero > .logo-img {
 
   .btn.cta {
     font-size: 14px;
-    line-height: 15px;
+    line-height: normal;
+    padding: 1rem 40px;
   }
 
   footer .hero {
@@ -1039,7 +1169,7 @@ footer .hero > .logo-img {
     bottom: unset;
     transform: none;
     margin-bottom: 89px;
-    font-size: 70px;
+    font-size: 76px;
   }
 
   footer .hero .logo {
@@ -1078,13 +1208,18 @@ footer .hero > .logo-img {
 
   section.marketing .bg-lines {
     top: 0;
+    margin-top: unset;
   }
 
   section.marketing .card-img {
     width: 199px;
     height: 239px;
     margin-bottom: -91px;
-    margin-left: -42px;
+    margin-left: -4px;
+    top: unset;
+    left: unset;
+    object-fit: cover;
+    transform: scale(1.12) translateX(-11px);
   }
 
   section.marketing h3 {
@@ -1200,11 +1335,11 @@ footer .hero > .logo-img {
   }
 
   section.hero .content p:first-of-type {
-    max-width: 256px;
+    max-width: 187px;
   }
 
   section.hero .content p:nth-of-type(2) {
-    max-width: 256px;
+    max-width: 197px;
   }
 
   section.hero .intro {
@@ -1241,7 +1376,7 @@ footer .hero > .logo-img {
   section.hero .intro .logo {
     width: 37px;
     height: 19px;
-    margin: 0 0.5rem 2px;
+    margin: 0 0.5rem 4px;
   }
 
   section.hero .scroll {
@@ -1281,8 +1416,21 @@ footer .hero > .logo-img {
     top: -4px;
   }
 
+  section.questions .info .btn {
+    margin-top: 12px;
+  }
+
   section.questions .hero .title {
     width: 190px;
+  }
+
+  section.questions .info .btn.help {
+    padding: 1rem 24px;
+    width: 283px;
+    background: rgba(255, 255, 255, 0.30);
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 4px;
+    text-align: center;
   }
 
   .scroll.indicator {
@@ -1290,7 +1438,7 @@ footer .hero > .logo-img {
   }
 
   footer .hero {
-    font-size: 11.3vw;
+    font-size: 11.8vw;
     letter-spacing: 0.4px;
     font-weight: 400;
     line-height: 60px;
@@ -1306,7 +1454,7 @@ footer .hero > .logo-img {
   footer .hero > .logo-img {
     height: 10vw;
     width: 28vw;
-    margin-bottom: -5px;
+    margin-bottom: -3px;
   }
 
   footer > .logo {
@@ -1319,9 +1467,9 @@ footer .hero > .logo-img {
     font-weight: 400;
   }
 
-  .request-options .card:nth-child(2) {
+  /* .request-options .card:nth-child(2) {
     height: 270px;
-  }
+  } */
 
   section.questions .chips .btn {
     font-size: 12px;
@@ -1365,7 +1513,7 @@ footer .hero > .logo-img {
   }
 
   footer .hero {
-    font-size: 38px;
+    font-size: 41px;
   }
 
   footer .hero .logo {
@@ -1378,7 +1526,7 @@ footer .hero > .logo-img {
   footer .hero > .logo-img {
     height: 34px;
     width: 94px;
-    margin-bottom: -6px;
+    margin-bottom: -3px;
   }
 }
 
