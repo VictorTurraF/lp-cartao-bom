@@ -1481,7 +1481,7 @@ footer .hero > .logo-img {
   section.hero .intro .logo {
     object-fit: cover;
     width: 40px;
-    object-position: 0 -1px;
+    object-position: center center;
     height: unset;
     margin: 0 2px 0 0;
   }
