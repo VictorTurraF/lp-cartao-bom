@@ -884,7 +884,8 @@ footer .hero > .logo-img {
 
 .mobile-menu .header {
   background: #202125;
-  padding: 20px 26px;
+  padding: 0 26px;
+  min-height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -907,12 +908,12 @@ footer .hero > .logo-img {
 }
 
 .mobile-menu .links {
-  margin-top: 36px;
+  margin-top: 33px;
 }
 
 .mobile-menu .links a {
   font-weight: 700;
-  font-family: "Gotham HTF";
+  font-family: "Tahoma";
   font-size: 24px;
   line-height: 150%;
   color: #4a4a4a;
