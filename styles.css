@@ -1432,11 +1432,7 @@ footer .hero > .logo-img {
     max-width: 197px;
   }
 
-  section.hero .intro {
-    font-size: 1rem;
-    align-items: center;
-    gap: 4px;
-  }
+  
 
   section.hero .content {
     margin: 139px 24px 0;
@@ -1465,14 +1461,29 @@ footer .hero > .logo-img {
     background: none;
   }
 
-  section.hero .intro .logo {
+  section.hero .intro {
+    font-size: 1rem;
+    align-items: stretch;
+    gap: 6px;
+    height: 18px;
+  }
+
+  /* section.hero .intro .logo {
     width: 37px;
     height: 19px;
     margin: 0 0.5rem .1888rem;
-  }
+  } */
+
+  /* section.hero .intro .logo {
+    margin-left: -2px;
+  } */
 
   section.hero .intro .logo {
-    margin-left: -2px;
+    object-fit: cover;
+    width: 40px;
+    object-position: 0 -1px;
+    height: unset;
+    margin: 0 2px 0 0;
   }
 
   section.hero .scroll {
