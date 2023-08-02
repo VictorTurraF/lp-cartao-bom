@@ -227,6 +227,21 @@ header {
   background: linear-gradient(180deg, #000000 -76.79%, rgba(0, 0, 0, 0) 100%);
 }
 
+.container {
+  padding-left: calc((100vw - 1216px) / 2);
+  padding-right: calc((100vw - 1216px) / 2);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 32px;
+  grid-row-gap: 0px;
+  padding-left: calc((100vw - 1240px) / 2);
+  padding-right: calc((100vw - 1240px) / 2);
+}
+
 ul.menu {
   display: flex;
 }
@@ -236,7 +251,12 @@ header nav ul {
   height: 100%;
 }
 
-.logo a,
+.logo a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 ul.menu li a {
   display: flex;
   align-items: center;
@@ -401,16 +421,26 @@ section.marketing .bg-lines {
 
 .benefits.row {
   margin-top: 70px;
-  display: grid;
-  grid-template-columns: 307px 285px;
-  justify-content: center;
-  gap: 224px;
 }
 
 .benefit {
   text-align: left;
   color: #4a4a4a;
   z-index: 300;
+}
+
+.benefit.one {
+  grid-area: 1 / 3 / 2 / 7;
+  width: 307px;
+}
+
+.benefit.two {
+  grid-area: 1 / 8 / 2 / 11;
+  width: 285px;
+}
+
+section.marketing .note {
+  grid-area: 1 / 3 / 2 / 7;
 }
 
 .benefit .obs {
@@ -424,12 +454,8 @@ section.marketing .note {
   line-height: 150%;
   z-index: 300;
   position: relative;
-  display: grid;
-  grid-template-columns: 307px 285px;
   justify-content: center;
-  gap: 224px;
   text-align: left;
-  padding: 0.5rem 0 0;
 }
 
 section.request {
@@ -499,10 +525,16 @@ section.request h3.title > span {
 
 section.request .request-options.row {
   display: grid;
-  grid-template-columns: 391px 391px;
-  gap: 245px;
   margin-top: 106px;
   justify-content: center;
+}
+
+.request-options .card:nth-child(1) {
+  grid-area: 1 / 2 / 2 / 6;
+}
+
+.request-options .card:nth-child(2) {
+  grid-area: 1 / 8 / 2 / 12;
 }
 
 .request-options .card {
@@ -1012,7 +1044,6 @@ footer .hero > .logo-img {
   section.request .request-options.row {
     gap: unset;
     justify-content: space-between;
-    padding: 0 58px;
   }
 
   section.questions .title {
@@ -1068,19 +1099,18 @@ footer .hero > .logo-img {
     font-size: 33px;
   }
 
-  section.marketing .note,
-  .benefits.row {
-    padding: 0 58px;
-    justify-content: space-between;
-    gap: unset;
+  section.request .request-options.row {
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    margin-top: 48px;
   }
 
-  section.request .request-options.row {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    gap: 40px;
-    margin-top: 48px;
-    padding: 0 24px;
+  .request-options .card:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 7; 
+  }
+  
+  .request-options .card:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 7;
   }
 
   .request-options .card {
@@ -1127,6 +1157,13 @@ footer .hero > .logo-img {
 }
 
 @media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-column-gap: 16px;
+    padding-left: calc((100vw - 342px) / 2);
+    padding-right: calc((100vw - 342px) / 2);
+  }
+
   header {
     height: 60px;
     gap: 0;
@@ -1258,19 +1295,22 @@ footer .hero > .logo-img {
     margin-left: 4px;
   }
 
-  section.marketing .note,
   .benefits.row {
-    grid-template-columns: 222px;
-    grid-template-rows: auto auto;
-    gap: 40px;
-    padding: 64px 0 0;
-    margin: 0;
+    margin-top: 64px;
+    row-gap: 40px;
     justify-content: center;
+    grid-template-rows: repeat(2, auto);
+  }
+
+  section.marketing .benefit.one { grid-area: 1 / 2 / 2 / 6; width: auto; }
+  section.marketing .benefit.two { grid-area: 2 / 2 / 3 / 6; width: auto; }
+
+  .obs.grid {
+    margin-top: .5rem;
   }
 
   section.marketing .note {
-    padding: 0.5rem 0 0 0;
-    gap: 0;
+    grid-area: 1 / 2 / 2 / 6;
   }
 
   section.request h3.title {
@@ -1305,11 +1345,19 @@ footer .hero > .logo-img {
   }
 }
 
+@media (max-width: calc(342px + 48px)) {
+  .grid {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
 @media (max-width: 520px) {
   section.questions .hero.row .topinho {
     width: 200px;
     height: 200px;
   }
+
 }
 
 @media (max-width: 700px) {
