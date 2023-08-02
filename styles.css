@@ -234,7 +234,7 @@ header {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-rows: 1fr;
   grid-column-gap: 32px;
   grid-row-gap: 0px;
@@ -781,12 +781,15 @@ footer .company-information {
   gap: 32px;
   z-index: 200;
   position: relative;
+  width: 495px;
 }
 
 .company-information li {
   display: flex;
   flex-direction: column;
   color: #4A4A4A;
+  line-height: 150%;
+  letter-spacing: 1px;
 }
 
 .company-information li .label {
@@ -840,7 +843,7 @@ footer .hero .lead {
 footer .social.links {
   display: flex;
   gap: 18px;
-  margin-top: 25px;
+  margin-top: 33px;
   z-index: 300;
   position: relative;
 }
@@ -852,9 +855,9 @@ footer .social.links :is(a, li) {
 
 footer .hero > .logo-img {
   height: 89px;
-  width: 247px;
+  width: 229px;
   object-fit: cover;
-  margin-bottom: -15px;
+  margin-bottom: -10px;
 }
 
 .hide-only-in-desk {
@@ -1106,11 +1109,11 @@ footer .hero > .logo-img {
   }
 
   .request-options .card:nth-child(1) {
-    grid-area: 1 / 1 / 2 / 7; 
+    grid-area: 1 / 2 / 2 / 7; 
   }
   
   .request-options .card:nth-child(2) {
-    grid-area: 2 / 1 / 3 / 7;
+    grid-area: 1 / 7 / 2 / 12; 
   }
 
   .request-options .card {
@@ -1204,6 +1207,7 @@ footer .hero > .logo-img {
 
   footer .company-information {
     gap: 24px;
+    width: 100%;
   }
 
   .btn.cta {
@@ -1328,6 +1332,14 @@ footer .hero > .logo-img {
     font-size: 36px;
   }
 
+  .request-options .card:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 7;
+  }
+  
+  .request-options .card:nth-child(2) {
+    grid-area: 2 / 1 / 3 / 7; 
+  }
+
   section.questions .info .text {
     font-size: 12px;
     line-height: 18px;
@@ -1335,8 +1347,17 @@ footer .hero > .logo-img {
     margin-top: 40px;
   }
 
+  footer span.address {
+    width: 100%;
+  }
+
   .hide-only-in-desk {
     display: initial;
+  }
+
+  .app-popup {
+    display: none;
+    transition: display .3s ease-in-out;
   }
 
   .app-popup.open {
