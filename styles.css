@@ -311,8 +311,9 @@ section.hero .intro {
 
 section.hero .intro .logo {
   width: 65px;
-  height: 33px;
-  margin: 0 0.75rem;
+  height: 29px;
+  position: relative;
+  margin: 0 12px 0 8px;
 }
 
 section.hero .content .new-logo {
@@ -1467,7 +1468,7 @@ footer .hero > .logo-img {
   section.hero .intro .logo {
     width: 37px;
     height: 19px;
-    margin: 0 0.5rem 4px;
+    margin: 0 0.5rem .1888rem;
   }
 
   section.hero .intro .logo {
