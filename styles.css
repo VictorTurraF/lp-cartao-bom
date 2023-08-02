@@ -1433,6 +1433,8 @@ footer .hero > .logo-img {
 
   section.hero .intro {
     font-size: 1rem;
+    align-items: center;
+    gap: 4px;
   }
 
   section.hero .content {
@@ -1466,6 +1468,10 @@ footer .hero > .logo-img {
     width: 37px;
     height: 19px;
     margin: 0 0.5rem 4px;
+  }
+
+  section.hero .intro .logo {
+    margin-left: -2px;
   }
 
   section.hero .scroll {
